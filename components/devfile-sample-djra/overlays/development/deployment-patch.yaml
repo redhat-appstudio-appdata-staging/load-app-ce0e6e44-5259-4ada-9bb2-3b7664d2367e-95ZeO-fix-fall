@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-djra
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-71-tenant/load-app-ce0e6e44-5259-4ada-9bb2-3b7664d2367e/devfile-sample-djra@sha256:bf39553ced7518f39094956c3d4ba92a6c066bb6b11d647b7881e3978f8b458e
+        name: my-nodejs
+        resources: {}
+status: {}
